@@ -8,7 +8,7 @@ I am a QR Code Bot**
 
 >> `I can generate links to QR Code with QR Code decode to links support.`
 
-Made by @FayasNoushad"""
+Made by @Mo_Tech_YT"""
 
 HELP_TEXT = """**Hey, Follow these steps:**
 
@@ -24,7 +24,7 @@ HELP_TEXT = """**Hey, Follow these steps:**
 /reset - For reset settings
 /status - For bot status
 
-Made by @FayasNoushad"""
+Made by @Mo_Tech_YT"""
 
 ABOUT_TEXT = """--**About Me 😎**--
 
@@ -34,9 +34,9 @@ ABOUT_TEXT = """--**About Me 😎**--
 
 📢 **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
 
-👥 **Group :** [Developer Team](https://telegram.me/TheDeveloperTeam)
+👥 **Group :** [Developer Team](https://telegram.me/mo_Tech_Group)
 
-🌐 **Source :** [👉 Click here](https://github.com/FayasNoushad/QR-Code-bot)
+🌐 **Source :** [👉 Click here](https://github.com/MRK-YT/QR-Code-bot)
 
 📝 **Language :** [Python3](https://python.org)
 
@@ -50,6 +50,8 @@ FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for us
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton('Deploy Now', url=LINK)
+        ],[
         InlineKeyboardButton('⚙ Help', callback_data='help'),
         InlineKeyboardButton('About 🔰', callback_data='about'),
         InlineKeyboardButton('Close ✖️', callback_data='close')
@@ -58,6 +60,8 @@ START_BUTTONS = InlineKeyboardMarkup(
 
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton('Deploy Now', url=LINK)
+        ],[
         InlineKeyboardButton('🏘 Home', callback_data='home'),
         InlineKeyboardButton('About 🔰', callback_data='about')
         ],[
@@ -68,6 +72,8 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton('Deploy Now', url=LINK)
+        ],[
         InlineKeyboardButton('🏘 Home', callback_data='home'),
         InlineKeyboardButton('Help ⚙', callback_data='help'),
         InlineKeyboardButton('Close ✖️', callback_data='close')
