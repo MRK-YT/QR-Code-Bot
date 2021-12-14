@@ -8,10 +8,15 @@ from database import db
 
 
 QR_BUTTONS = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url=f"https://telegram.me/mo_tech_yt")
-        ]]
-    )
+    [
+        [
+            InlineKeyboardButton(
+                text="⚙ Join Updates Channel ⚙",
+                url='https://telegram.me/mo_tech_yt',
+            )
+        ]
+    ]
+)
 
 
 @Client.on_message(filters.private & filters.photo)
@@ -39,11 +44,19 @@ async def qr_decode(bot, update):
         return
     await decode_text.edit_text(
         text=f"Link :- {qr_text}\n\nMade by @Mo_Tech_YT",
-      	reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url=f"https://telegram.me/mo_Tech_YT")]]
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="⚙ Join Updates Channel ⚙",
+                        url='https://telegram.me/mo_Tech_YT',
+                    )
+                ]
+            ]
         ),
-        disable_web_page_preview=True
+        disable_web_page_preview=True,
     )
+
     try:
         os.remove(im_dowload)
     except Exception as error:

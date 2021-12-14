@@ -191,7 +191,7 @@ async def display_settings(bot, update, db, cb=False, cb_text=False):
     settings_buttons = [as_file_btn, close_btn]
     try:
         if cb:
-            if cb and cb_text:
+            if cb_text:
                 await update.message.edit_text(
                     text=SETTINGS_TEXT,
                     disable_web_page_preview=True,
